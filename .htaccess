@@ -1,0 +1,6 @@
+#order deny,allow
+#deny from all
+#client
+#allow from 192.185.128.24
+#developer
+#allow from 68.224.62.155
