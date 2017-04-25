@@ -1,5 +1,23 @@
 <?php include('template/core/header.php'); ?>
 
+    <?php
+      if ( $_POST["submit"] == true ) {
+          $recipient="rommel.fsantiago@gmail.com";
+          $subject="Thank you, your message has been sent.";
+          $sender= $_POST["sender"];
+          $senderEmail= $_POST["email"];
+          $message= $_POST["message"];
+
+          $mailBody="Name: $sender\n
+          Email: $senderEmail\n\n$message";
+
+          mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+      }
+
+
+    ?>
+
 
 
 <!--This is your header image-->
@@ -195,4 +213,32 @@
 </section>
 
   </main>
+
+  <script>
+  // Code injected by live-server
+  (function() {
+    function refreshCSS() {
+      var sheets = [].slice.call(document.getElementsByTagName("link"));
+      var head = document.getElementsByTagName("head")[0];
+      for (var i = 0; i < sheets.length; ++i) {
+        var elem = sheets[i];
+        head.removeChild(elem);
+        var rel = elem.rel;
+        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+        }
+        head.appendChild(elem);
+      }
+    }
+    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+    var address = protocol + window.location.host + window.location.pathname + '/ws';
+    var socket = new WebSocket(address);
+    socket.onmessage = function(msg) {
+      if (msg.data == 'reload') window.location.reload()
+      else if (msg.data == 'refreshcss') refreshCSS();
+    };
+    console.log('Live reload enabled.');
+  })();
+  </script>
 <?php include('template/core/footer.php'); ?>

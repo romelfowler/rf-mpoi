@@ -83,6 +83,8 @@
 
   <!-- Go To Top -->
     <a href="#" class="io-gotop"><i class="ti-shift-left"></i></a>
+    <!-- cloudflare -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <!-- jQuery -->
     <script src="../js/jquery-1.10.2.min.js"></script>
     <!-- jQuery Easing -->

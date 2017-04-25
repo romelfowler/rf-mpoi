@@ -85,6 +85,8 @@
     <a href="#" class="io-gotop"><i class="ti-shift-left"></i></a>
     <!-- jQuery -->
     <script src="../../js/jquery-1.10.2.min.js"></script>
+    <!-- cloudflare -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <!-- jQuery Easing -->
     <script src="../../js/jquery.easing.1.3.js"></script>
     <!-- Bootstrap -->
