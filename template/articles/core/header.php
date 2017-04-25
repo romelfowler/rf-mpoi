@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../../css/magnific-popup.css">
   <!-- Easy Responsive Tabs -->
   <link rel="stylesheet" href="../../css/easy-responsive-tabs.css">
-  <link rel="stylesheet" href="http://www.rommelfowler.com/projects/MPOI/styles/css/style.css">
+  <link rel="stylesheet" href="https://www.rommelfowler.com/projects/MPOI/styles/css/style.css">
   <!-- Theme Style -->
   <link rel="stylesheet" href="../../css/style.css">
 
